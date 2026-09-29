@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ECE Engineering AI Assistant</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">📡</div><div><b>ECE AI</b><small>Engineering Assistant</small></div></div>
+  <div class="online">● Gemini AI Online</div>
+  <p class="label">ECE TOPICS</p>
+  <button data-question="Explain analog electronics in simple terms.">◈ Analog Electronics</button>
+  <button data-question="Explain digital electronics and logic gates.">▣ Digital Electronics</button>
+  <button data-question="Explain AM and FM communication.">◉ Communication Systems</button>
+  <button data-question="Explain 8051 microcontroller architecture.">⌘ Microcontrollers</button>
+  <button data-question="What is VLSI?">◇ VLSI</button>
+  <button data-question="Explain antennas and wave propagation.">⌁ Antennas</button>
+  <button data-question="Give me an ECE mini project idea.">⚙ ECE Projects</button>
+  <div class="safety"><b>⚠ Lab Safety</b><br><small>Follow proper lab procedures and qualified supervision for powered hardware.</small></div>
+</aside>
+
+<main>
+<header>
+  <div><span>ECE • LEARN • BUILD • INNOVATE</span><h1>ECE Engineering <em>AI Assistant</em></h1><p>Learn Electronics & Communication Engineering with AI.</p></div>
+  <button id="newChat">＋ New Chat</button>
+</header>
+
+<section id="chat">
+  <div class="welcome">
+    <div class="hero">📡</div>
+    <h2>What are you learning today?</h2>
+    <p>Ask anything related to Electronics & Communication Engineering.</p>
+    <div class="cards">
+      <button data-question="What is a transistor and how does it work?"><b>Transistor</b><small>Basics & working</small></button>
+      <button data-question="Explain the difference between AM and FM."><b>AM vs FM</b><small>Communication</small></button>
+      <button data-question="Explain the working of a PN junction diode."><b>PN Junction</b><small>Semiconductor</small></button>
+      <button data-question="Explain the architecture of the 8051 microcontroller."><b>8051</b><small>Microcontroller</small></button>
+    </div>
+  </div>
+</section>
+
+<div id="typing">● ● ● &nbsp; AI is thinking...</div>
+<form id="form"><textarea id="message" placeholder="Ask an ECE question..." rows="1"></textarea><button>➤</button></form>
+<div class="hint">Enter to send • Shift + Enter for a new line</div>
+</main>
+</div>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
